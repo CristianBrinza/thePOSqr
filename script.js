@@ -28,8 +28,8 @@ $(function() {
     document.getElementById("hideldiv").style.display='none';
     if(banana>0){for(let i = banana; i > 0; i--)result+="01"}
     if(pure>0){for(let i = pure; i > 0; i--)result+="02"}
-    if(chop>0){for(let i = pure; i > 0; i--)result+="03"}
-    if(tea>0){for(let i = pure; i > 0; i--)result+="04"}
+    if(chop>0){for(let i = choq; i > 0; i--)result+="03"}
+    if(tea>0){for(let i = tea; i > 0; i--)result+="04"}
     document.getElementById("hidel").style.display='block';
     $(".qr-code").attr("src", "https://chart.googleapis.com/chart?cht=qr&chl=" + result + "&chs=160x160&chld=L|0");
   });
